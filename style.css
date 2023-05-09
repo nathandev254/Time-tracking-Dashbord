@@ -19,7 +19,6 @@ Body{
     grid-template-columns: auto auto auto auto;
     width: 100%;
     height: 70%;
-    /* border: 1px solid red; */
     gap: 50px;
 }
 .grid--unique{
@@ -132,4 +131,25 @@ Body{
     background-color: hsl(43, 84%, 65%);
     background-repeat: no-repeat;
     background-position: top right;   
+}
+
+@media only screen and (max-width: 375px){
+	.grid-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .grid--unique{
+        height: 70px;
+        width: 100%;
+        margin-bottom: 120px;
+    }
+    .grid--item{
+        height: 250px;
+    }
+    .grid--1{
+        /* margin-top:30px; */
+    }
 }
