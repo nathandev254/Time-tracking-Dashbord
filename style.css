@@ -30,11 +30,11 @@ Body{
     background-color:hsl(235, 46%, 20%) ;
     border-radius: 20px;
 }
-.grid--unique p{
-    margin: 20px 0 10px 10px;
+.paragraph p{
+    margin: 20px 0 20px 20px;
     color: rgba(255, 255, 255, 0.502);
 }
-.grid--unique p:nth-child(3){
+.paragraph p:nth-child(2){
     color: #fff;
 }
 .outer{
@@ -51,11 +51,11 @@ Body{
     border-radius: 50%;
     border: 2px solid #fff;
 }
-.outer p{
+.outer div p{
     margin-bottom: 30px;
     color: #fff;
 }
-.outer span{
+.outer div span{
     display: block;
     font-size: 70px;
     font-weight: 200;
@@ -142,14 +142,31 @@ Body{
         gap: 5rem;
     }
     .grid--unique{
-        height: 70px;
+        position: relative;
         width: 100%;
         margin-bottom: 120px;
     }
+    .outer {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+    .outer div span{
+        display: block;
+        font-size: 15px;
+    }
+    .outer img{
+        height: auto;
+    }
     .grid--item{
         height: 250px;
+        width: 100%;
     }
-    .grid--1{
-        /* margin-top:30px; */
+    .paragraph{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 }
